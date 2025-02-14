@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">anjilapplab1</string>
+    <string name="anjil_shrestha">Anjil Shrestha!</string>
+    <string name="btn1">BCA</string>
+    <string name="btn2">CSIT</string>
+    <string name="btn3">BBA</string>
+    <string name="txt1">Enter First Number</string>
+    <string name="txt2">Enter Second Number</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnSubtract">Subtract</string>
+</resources>
