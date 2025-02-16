@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@id/main">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Patan Multiple Campus"
+    android:textAlignment="center"
+    android:id="@+id/clg"
+    />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clg"
+        android:layout_marginTop="100sp"
+        android:layout_centerHorizontal="true"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="Anjil"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20sp"
+        android:text="Name"
+        android:textSize="40sp"
+    />
+    <TextView
+        android:id="@+id/program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20sp"
+        android:text="Program"
+        android:textSize="40sp"
+        />
+    <TextView
+        android:id="@+id/Semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/program"
+        android:layout_marginTop="20sp"
+        android:text="Semester"
+        android:textSize="40sp"
+        />
+
+    <EditText
+        android:id="@+id/tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:hint="Anjil"
+        android:textSize="35sp"
+        />
+    <EditText
+        android:id="@+id/tprogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:hint="BCA"
+        android:textSize="35sp"/>
+    <EditText
+        android:id="@+id/tsemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tprogram"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:inputType="text"
+        android:hint="Sixth"
+        android:textSize="35sp"/>
+</RelativeLayout>
