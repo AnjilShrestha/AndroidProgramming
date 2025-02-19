@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <TextView
+        android:id="@+id/university"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tribhuvan University"
+        android:textAlignment="center"
+        android:textColor="#1f43f1"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/college"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patan Multiple Campus"
+        android:textAlignment="center"
+        android:textColor="#1f43f1"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/university" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#801818"
+        android:text="Patandhoka, Lalitpur, Nepal"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/college"/>
+
+    <TextView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1f43f1"
+        android:text="Student Identity Card"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/profile"
+        android:contentDescription="Profile Picture" />
+
+    <TextView
+        android:id="@+id/viewname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="Name:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/picture"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Anjil Shrestha"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/picture"
+        app:layout_constraintLeft_toRightOf="@id/viewname"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="18dp"/>
+
+    <TextView
+        android:id="@+id/viewlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="Level:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewname"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/txtlevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="BCA"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtname"
+        app:layout_constraintLeft_toRightOf="@id/viewlevel"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="18dp"/>
+    <TextView
+        android:id="@+id/viewfaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="Faculty :"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewlevel"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/txtfaculty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Humanities"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtlevel"
+        app:layout_constraintLeft_toRightOf="@id/viewfaculty"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="18dp"/>
+    <TextView
+        android:id="@+id/viewroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="Roll:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewfaculty"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/txtroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="24/078"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtfaculty"
+        app:layout_constraintLeft_toRightOf="@id/viewfaculty"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="18dp"/>
+
+    <TextView
+        android:id="@+id/viewaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="Address:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewroll"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/txtaddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Lalitpur"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtroll"
+        app:layout_constraintLeft_toRightOf="@id/viewaddress"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="18dp"/>
+    <TextView
+        android:id="@+id/viewdob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="DOB:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewaddress"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/txtdob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="2059-10-06"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtaddress"
+        app:layout_constraintLeft_toRightOf="@id/viewdob"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="18dp"/>
+
+    <TextView
+        android:id="@+id/viewcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="Contact:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewdob"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/txtcontact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="BCA"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtdob"
+        app:layout_constraintLeft_toRightOf="@id/viewcontact"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="18dp"/>
+
+    <TextView
+        android:id="@+id/viewvalid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="Valid upto:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewcontact"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/txtvalid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="2082-12-30"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtcontact"
+        app:layout_constraintLeft_toRightOf="@id/viewvalid"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="18dp"/>
+
+    <TextView
+        android:id="@+id/found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1f43f1"
+        android:text="If found please submit to department"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
