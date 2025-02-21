@@ -8,4 +8,22 @@
     <string name="txt2">Enter Second Number</string>
     <string name="btnAdd">Add</string>
     <string name="btnSubtract">Subtract</string>
+
+    <string-array name="facultyname">
+        <item>BCA</item>
+        <item>BBA</item>
+        <item>CSIT</item>
+        <item>BIT</item>
+    </string-array>
+
+    <string-array name="level_list">
+        <item>Bachelor</item>
+        <item>Master</item>
+        <item>+2</item>
+        <item>Intermediate</item>
+    </string-array>
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>
