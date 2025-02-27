@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter First Number"
+        android:background="@color/green"
         android:inputType="number"
         android:textSize="20sp"
         />
@@ -31,9 +32,7 @@
         android:layout_height="wrap_content"
         android:text="Add"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:onClick="addFunction"
-        />
+        android:textStyle="bold"/>
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"

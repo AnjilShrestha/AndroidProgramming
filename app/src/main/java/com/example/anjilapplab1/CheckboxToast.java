@@ -19,13 +19,13 @@ public class CheckboxToast extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_checkbox_toast);
-        c1=findViewById(R.id.chk1);
-        c2=findViewById(R.id.chk2);
-        c3=findViewById(R.id.chk3);
+        c1 = findViewById(R.id.chk1);
+        c2 = findViewById(R.id.chk2);
+        c3 = findViewById(R.id.chk3);
 
         c1.setOnClickListener(this);
-        c1.setOnClickListener(this);
-        c1.setOnClickListener(this);
+        c2.setOnClickListener(this);
+        c3.setOnClickListener(this);
 
     }
     public void onClick(View v)

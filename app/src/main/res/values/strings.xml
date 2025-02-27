@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">anjilapplab1</string>
     <string name="anjil_shrestha">Anjil Shrestha!</string>
     <string name="btn1">BCA</string>
@@ -25,5 +26,10 @@
     <string-array name="gender_list">
         <item>Male</item>
         <item>Female</item>
+    </string-array>
+    <string-array name="country_list">
+        <item>Nepal</item>
+        <item>India</item>
+        <item>China</item>
     </string-array>
 </resources>
